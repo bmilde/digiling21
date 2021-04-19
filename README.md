@@ -45,61 +45,114 @@ Strings store text in Python, they are declared with either ' or ". The text is 
 
 ```python
 print('Hello World!')
-```python
+```
 
 The print functions and others are always available, they are built in functions of the python interpreter.
 
 The input function can be used to request user input on the command line:
 
+```python
 input('What is your name? ') # the () <- are executing the function. Parameters are inside the () and can be seperated by a , 
+```
 
+This program asks the users name and says hi <name>!
 name = input('What is your name? ')
-print('Hi ')
+print('Hi ' + name + '!')
 
-print('Hi ' + name)
+Strings can be concatenated with +
 
+## Type conversion
 
-
-type conversion
-
+```python
 birth_year = input('Birth year:')
 age = 2021 - birth_year
+print('Your age is:' + age)
+```
 
+--> this will results in a type_error
 
---> error
+Because internally, Python will store the birth year as:
 
+```python
 birth_year = '1987'
+```
 
-builtin functions: type conversion
+A variables can be 
 
+To solve this issue we can use builtin functions that concert a particular type (type conversion).
+
+You can check that the type of birth year is string, by using the type function:
+
+```python
 print(type(birth_year))
+```
 
-course = ‘Python for beginners’
+```python
+birth_year = input('Birth year:')
+age = 2021 - birth_year
+print('Your age is:' + age)
+```
 
-course = ‘Python's ...’
+# strings
 
-text = ''' ''''
+```python
+course = 'Python for beginners'
+course = 'Python's ...' #-> error, python doesn
+course = "Python's ..." #-> correct way to store a string containing a '
+course = 'Python\'s ...' #-> alternative, use \ to backspace the '
+```
 
+Triple quotes can be used for very long lines of text:
 
+```python
+text = '''Very long line of text
+that can also span
+multiple lines'''
+```
 
+## string indexing
+
+```python
 course = ‘Python for beginners’
           01234
+```
 
+The slicing operator [] can be used to 'slice' individual characters from a string, or slice a sequence of characters from a string. Each character in a string has an index, starting from 0.
+
+```python
 print(course[0])
+```
 
+-> 'P'
 
+```python
 print(course[-1])
+```
 
+Slice the last character with -1 (counts backwards from the end).
+-> 's'
 
+```python
 print(course[0:3])
+```
 
-'Pyt'
+Use [x:y] to select a range of characters from x to y:
 
+-> 'Pyt'
+
+```python
 print(course[1:])
+```
 
+Or [x:] to select from x till the end.
 
+```python
 print(course[:5])
+```
 
+Or [:y] to select from the beginning to y.
+
+```python
 first = 'Alan'
 last = 'Smithee'
 address = 'ABC street 1'
@@ -107,14 +160,20 @@ address = 'ABC street 1'
 msg = 'Hi ' + first + ' ' + last + ', ' + 'your package has been sent to: ' + address
 
 print(msg)
+```
 
+String formatting is more convienent, when you have to combine many strings. You can copy content from variables into the string using {}:
+
+```python
 msg = f'hi {first} {last}, your package has been sent to: {address}'
-
 print(msg)
+```
 
-string methods
+## string methods
 
 course = 'Python for beginners'
+
+Returns the length of a string:
 
 len(course)
 
