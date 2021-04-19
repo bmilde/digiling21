@@ -207,14 +207,37 @@ The replace function is useful to replace any occurence of a string with another
 .replace('beginners', 'absolute beginners')
 ```
 
-celcius = 
+## If statements
 
-if celcius > 26.0:
+if statements can be used to conditionally execute another block of python code. The condtional code is intended by one level. The geneneral synytax is:
 
-elif
+```python
+if <condition>:
+    <conditional block of code>
+    ...
+elif <condition2>:
+    <conditional block of code>
+    ...
+elif <condition3>:
+    <conditional block of code>
+    ...
+else:
+    <conditional block of code, if none of the above was True>
+```
 
-else
+There can be multiple optional else if (elif) statements. They will only execute the conditioal code if none of the previous condition were met and the current condition is true. Once one if or elif executes the conditional block, none of the other statements will be checked. There can only be one optional else statement, that will exceute if *none* of the if or elif conditions was met.
 
+Code example, depending on the temperature, print a different message to the user:
+
+```python
+if celsius < 0:
+    print("It's freezing!!! :( You need a jacket. A warm one.")
+elif celsius < 22.0:
+    print(':(')
+else:
+    print('You only need a t-shirt')
+    print(':)')
+```
 
 If statements - excercise: names , excercise: convert
 
