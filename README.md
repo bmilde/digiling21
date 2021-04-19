@@ -93,7 +93,7 @@ age = 2021 - birth_year
 print('Your age is:' + age)
 ```
 
-# strings
+# Strings
 
 ```python
 course = 'Python for beginners'
@@ -110,7 +110,7 @@ that can also span
 multiple lines'''
 ```
 
-## string indexing
+## String indexing
 
 ```python
 course = ‘Python for beginners’
@@ -169,7 +169,7 @@ msg = f'hi {first} {last}, your package has been sent to: {address}'
 print(msg)
 ```
 
-## string methods
+## String methods
 
 ```python
 course = 'Python for beginners'
