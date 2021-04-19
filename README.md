@@ -171,35 +171,41 @@ print(msg)
 
 ## string methods
 
+```python
 course = 'Python for beginners'
+```
 
 Returns the length of a string:
 
+```python
 len(course)
+```
+
+Try these methods:
 
 .find()
+
 .upper()
+
 .lower()
 
-functions vs. methods
+functions vs. methods: strings and other object have methods that are particular to the the object. For example a string has methods that over objects don't have in Python. Such methods are called with the variable name (or string directly), follow by a . and the method name, then (). Or (arg1), (arg1, arg2) if there are any arguments. See these examples:
 
+```python
+course = 'Python for beginners'
 print(course.upper())
-
+print(course.lower())
+print(course.title())
 print(course.find('o'))
-
 print(course.find('O'))
-
 print(course.find('beginners'))
+```
 
-in
+The replace function is useful to replace any occurence of a string with another:
 
+```python
 .replace('beginners', 'absolute beginners')
-
-.title()
-
-import math
-math.log()
-
+```
 
 celcius = 
 
@@ -214,10 +220,12 @@ If statements - excercise: names , excercise: convert
 
 while loops
 
+```python
 i = 1
 while i <=5:
     print(i) ->  print('*' * i)
     i = i+1
+```
 
 while
 
