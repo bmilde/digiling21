@@ -4,6 +4,8 @@ Install Python from Python.org
 
 We use [PyCharm](https://www.jetbrains.com/pycharm/) in the course.
 
+# 16. April
+
 ## Variables
 
 ```python
@@ -239,9 +241,30 @@ else:
     print(':)')
 ```
 
-If statements - excercise: names , excercise: convert
+If statements - excercise: convert
 
-while loops
+Excercise: ask the user
+
+Solution:
+
+```python
+command = input('Convert meter to feet (mtf)'
+                ' or feet to meters (ftm)?'
+                ' Please answer: ftm or mtf! ')
+
+if command == 'ftm':
+    feet = input('Please input feet:')
+    meter = float(feet) / 3.28408
+    print('result in meters is:', meter)
+elif command == 'mtf':
+    meter = input('Please input meters:')
+    feet = float(meter) * 3.28408
+    print('result in feet is:', feet)
+else:
+    print('Not a valid command!')
+```
+
+## while loops
 
 ```python
 i = 1
@@ -254,24 +277,64 @@ while
 
 else:
 
+*break* can be used to abort a loop. *continue* can be used to break the current flow through the loop.
+
+
 
 exercise loops #1
-Guessing game: (break statement)
+Guessing game exercise: (while loop with break statement)
+
+Solution:
+
+```python
+import random
+
+random_num = random.random()
+random_num *= 10.0
+secret = int(random_num)
+
+# keep track if the user won or lost
+has_lost = True
+
+# Give the user 3 tries to guess the secret
+while counter < 3:
+    counter += 1
+    secret_test = input("What is the secret number (0-9)? ")
+    if secret == int(secret_test):
+        print("Wow yes thats true! You have won")
+        has_lost = False
+        break
+    print("Remaining tries:", 3-counter)
+
+if has_lost:
+    print("Guessed wrong 3 times, you lost.")
+```
+
+Import statements: additional functionality can be loaded with the import statement. General syntax is import <random>.
+
 random.random()
 
-exercise loops #2, car
+exercise loops #2, simulate a car:
 
-> help
-> start
-> stop
-> exit
+# 23. April
 
+## for loops
+
+```python
 for num in [0, 1, 2, 3, 4]:
     print(num)
+```
 
+```python
 range(5)
 range(5, 10)
 range(5, 10, 2)
+```
+
+```python
+for num in range(5):
+    print(num)
+```
 
 excerise prices
 
