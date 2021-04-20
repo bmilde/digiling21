@@ -24,9 +24,17 @@ is_published = True or
 is_published = False 
 ```
 
-True / False: boolean values. Case sensisive!
+True / False: boolean values. Case sensisive! true / false will give an error. The 4 most basic types in Python are:
 
-(Its also possible to store more complex objects in variables and we'll discuss this in the future)
+Integers (int): 42
+
+Floating numbers (float): 4.67869
+
+Strings (str): 'test'
+
+Boolean (bool): True or False
+
+They are used depending on the information that you need to store in memory. Its also possible to store more complex objects in variables and we'll discuss this in the future.
 
 Excercise:
 
@@ -79,9 +87,19 @@ Because internally, Python will store the birth year as:
 birth_year = '1987'
 ```
 
-A variables can be 
+A variable can be of any type. Not all operations work on all types, in particular combining two different types may be ambigious. To solve this issue we can use builtin functions that concert a particular type (type conversion) and explicity tell Python how to handle a calculation:
 
-To solve this issue we can use builtin functions that concert a particular type (type conversion).
+```python
+int('1987') # -> 1987
+```
+
+There are more type functions:
+
+```python
+int('7')  # -> 7
+float('5.9') # -> 5.9
+str(5.9)  # -> "5.9"
+```
 
 You can check that the type of birth year is string, by using the type function:
 
@@ -89,10 +107,12 @@ You can check that the type of birth year is string, by using the type function:
 print(type(birth_year))
 ```
 
+The complete program, that calculates the age correctly with type conversions:
+
 ```python
 birth_year = input('Birth year:')
-age = 2021 - birth_year
-print('Your age is:' + age)
+age = 2021 - int(birth_year)
+print('Your age is:' + str(age))
 ```
 
 # Strings
