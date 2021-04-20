@@ -1,10 +1,12 @@
 # digiling21
 
-Install Python from Python.org
+Install Python from Python.org, choose an installer based on your OS.
 
-We use [PyCharm](https://www.jetbrains.com/pycharm/) in the course.
+We use [PyCharm](https://www.jetbrains.com/pycharm/) in the course. It's a great and free source code editor for Python that makes your life easier. Similar to a word processor for text it has integrated spell checking,
 
 # 16. April
+
+A Python script is interpreted from top to bottom. The Python interpreter reads your source code and translates it on the fly into machine code that your computer understands. There is no compilation step, since the code is interpreted at runtime.
 
 ## Variables
 
