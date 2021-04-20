@@ -2,11 +2,13 @@
 
 Install Python from Python.org, choose an installer based on your OS.
 
-We use [PyCharm](https://www.jetbrains.com/pycharm/) in the course. It's a great and free source code editor for Python that makes your life easier. Similar to a word processor for text it has integrated spell checking,
+We use [PyCharm](https://www.jetbrains.com/pycharm/) in the course. It's a great and free source code editor for Python that makes your life easier. Similar to a word processor for text it has integrated spell checking and can help you solve programming errors while you type.
 
 # 16. April
 
 A Python script is interpreted from top to bottom. The Python interpreter reads your source code and translates it on the fly into machine code that your computer understands. There is no compilation step, since the code is interpreted at runtime.
+
+Open PyCharm, make a new project (uncheck the checkbox that says something about main.py). Now add a new Python file by right clicking in the project tree on the left side and chose new Python file. You can give it any name you want, by convention the Python script that should be executed in a project is often named main.py .
 
 ## Variables
 
