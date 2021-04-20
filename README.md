@@ -304,9 +304,7 @@ while
 
 else:
 
-*break* can be used to abort a loop. *continue* can be used to break the current flow through the loop.
-
-
+*break* can be used to abort a loop. *continue* can be used to break the current flow through the loop to restart the next iteration at the top of the loop.
 
 exercise loops #1
 Guessing game exercise: (while loop with break statement)
@@ -337,34 +335,53 @@ if has_lost:
     print("Guessed wrong 3 times, you lost.")
 ```
 
-Import statements: additional functionality can be loaded with the import statement. General syntax is import <random>.
+Import statements: additional functionality can be loaded with the import statement. General syntax is import <package>. For example, to generate and print a random number between 0.0 (inclusive) and 1.0 (exclusive):
 
-random.random()
+```python
+import random
+print(random.random())
+```
 
-exercise loops #2, simulate a car:
+exercise loops #2, simulate a car.
 
 # 23. April
 
 ## for loops
+
+Another very frequent loop in Python is the *for* loop. It is usually a more convient way to describe a loop over a sequence, try the following code:
 
 ```python
 for num in [0, 1, 2, 3, 4]:
     print(num)
 ```
 
+In the above example, a list is used to describe the sequence that is iterated on. In each run through the for loop, num changes according to the items in the list. You can store sequences of any Python types/objects in a list. You'll often encounter list with basic types such as intergers, strings or float. For example [0, 1, 2, 3, 4] is a list of 5 integer numbers.
+
+Since iterating over a sequence of incrementing integers is a very common thing to do, Python has the short hand function range(...):
+
 ```python
-range(5)
-range(5, 10)
-range(5, 10, 2)
+range(5) # iterator that iterates over [0, 1, 2, 3, 4] 
+range(5, 10) # iterator that iterates over [5, 6, 7, 8, 9]
+range(5, 10, 2) # iterator that iterates over [5, 7, 9]
 ```
+
+This means, to print the numbers 
 
 ```python
 for num in range(5):
     print(num)
 ```
 
-excerise prices
+And from 0 to 99:
 
+```python
+for num in range(100):
+    print(num)
+```
+
+*WIP* the following text is work in progress and not yet completed *WIP*
+
+excerise prices
 
 loops: nested for loops
 
