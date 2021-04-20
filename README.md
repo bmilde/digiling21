@@ -66,8 +66,11 @@ input('What is your name? ') # the () <- are executing the function. Parameters 
 ```
 
 This program asks the users name and says hi <name>!
+          
+```python
 name = input('What is your name? ')
 print('Hi ' + name + '!')
+```
 
 Strings can be concatenated with +
 
