@@ -212,7 +212,7 @@ len(course)
 
 Try these methods:
 
-.find()
+.find("beginners")
 
 .upper()
 
@@ -291,6 +291,19 @@ else:
     print('Not a valid command!')
 ```
 
+Example: Test if word is contained in string. This example also uses the *in* operator, to test if a string is contained in another string.
+
+```python
+
+course = 'Python for beginners'
+
+if 'beginners' in course:
+    print('This is a beginners course')
+elif 'advanced' in course:
+    print('This is an advanced course')
+```
+
+
 ## while loops
 
 ```python
@@ -300,11 +313,11 @@ while i <=5:
     i = i+1
 ```
 
-while
-
-else:
+In a while loop, all intended statements are looped until the condition at the top returns False (= is no longer valid / True). You can read it as: do this while <some condition is still met>.
 
 *break* can be used to abort a loop. *continue* can be used to break the current flow through the loop to restart the next iteration at the top of the loop.
+
+A while loop can use an else: part as well, that is executed if no *break* occured.
 
 exercise loops #1
 Guessing game exercise: (while loop with break statement)
@@ -381,51 +394,104 @@ for num in range(100):
 
 *WIP* the following text is work in progress and not yet completed *WIP*
 
-excerise prices
+excerise prices: sum prices with a for loop:
+
+```python
+prices = [4.99, 12.0, 0.79, 19.99]
+sum = 0.0
+
+for ...
+
+print("sum:",sum)
+```
 
 loops: nested for loops
 
-
+```python
 numbers = [5, 2, 5, 2, 2]
 
 for x_count in numbers:
    print('*'*x_count)
 
    output = ''
-for count in range(x_count)_
+```
 
+replace '*'*x_count with a for loop
 
+## lists
+
+In the previous excercise, we encountered a list of floats. Lists can have elements of any type in Python. In particular and very relevant to this course, a list of strings can also be defined, for example:
+
+```python
 names = ['Sofia', 'Bob' , 'Eva', 'Adam' ]
+```
 
+This defines a list of four names. Try these:
+
+```python
 print(names)
-
 print(names[2])
+print(names[2:])
+```
 
-names[2:]
+Similarly to slicing in a string, the [] operator can also be applied to lists. Indexing starts at 0 and counts the elements of the list:
 
+```python
+names = ['Sofia', 'Bob' , 'Eva', 'Adam' ]
+            0       1       2       3
+```
 
+Lists can also be nested, i.e. a list can also contain other lists:
 
+```python
 names = [['Sofia', 'Eva'], ['Bob', 'Adam']]
+```
 
-for row in names:
+Try these:
 
+```python
+print(names[0])
+print(names[1])
+```
 
+Items can be inserted, removed and appended to a list:
 
+```python
 names = ['Sofia', 'Bob' , 'Eva', 'Adam' ]
 
 names.insert(0, 'Nina')
-names.remove
+print(names)
+names.remove(0)
+print(names)
+names.append('John')
+print(names)
+```
 
-.pop())
+Try these list methods, what do they do?
+
+.pop()
+
 .clear()
+
 .index("Bob")
 
-in operator
+The *in* operator can also be used on list items, to check if a particular element is contained in a list, e.g.
 
-.sort()    (in place)
-.reverse()
+```python
+if 'Bob' in names:
+    print('Bob is in the list of names!')
+```
 
-.copy()
+Lists can also be sorted, reversed and copied:
+
+```python
+names.sort()
+print(names)
+names.reverse()
+print(names)
+names_copy = names.copy()
+print(names_copy)
+```
 
 Closer look: lists exercise: numbers = [4,5,5,3,3,4]
 
