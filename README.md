@@ -416,7 +416,7 @@ for x_count in numbers:
    output = ''
 ```
 
-replace '*'*x_count with a for loop
+excercise: replace '*'*x_count with a for loop
 
 ## lists
 
@@ -493,34 +493,96 @@ names_copy = names.copy()
 print(names_copy)
 ```
 
-Closer look: lists exercise: numbers = [4,5,5,3,3,4]
+A string can also be split by white space into a list, try this:
 
+```python
+test = 'This is a test'.split()
+print(test)
+```
 
-tuples - immutable
+Closer look: lists exercise
 
-unpacking
+Write a program to remove repeating entries from this list:
 
+```python
+numbers = [4,5,5,3,3,4]
+```
+
+## tuples
+
+Tuples are like lists, but the elements can't be changed after the tuple was created. Tuples are *immutable* in Python, while lists are *mutable*. A tuple is created with () instead of [].
+
+```python
 coordinates = (4, 3)
+```
 
+## unpacking
+
+```python
 x = coordinates[0]
 y = coordinates[1]
 
 x, y = coordinates
 
 print(x*y)
+```
 
-dicts
+## Dictionaries (dicts)
 
-exercise #1
+Dictionaries store key/value pairs in Python. Searching for a key in a dictionary is very efficient in Python and fast even if a dictionary is really big. For example, to create a phonetic dictionary in Python, the keys would be words and the values the IPA sequence for a word. Another example would be telephone book, where the names are
 
-digit converter
+```python
+telephone_book = {'Adam':'+49 48264869', 'Eva':'+49 4738384', 'Bob':'+49 685685685', }
+```
 
-.split()
+Dictionaties are initialized with {} containing a list of key:value pairs. Additional entries can also be added later on:
 
-smiley converter
+```python
+telephone_book['Alice'] = '+49 567373577'
+```
 
-:)
+To retrieve the value for the key 'Bob', you can do:
 
-with open():
+name = 'Bob'
+print(telephone_book[name])
 
-grand exercise
+#or
+
+print(telephone_book['Bob'])
+
+The *in* operator can be used to check if a key is in a dictionary:
+
+```python
+if 'Bob' in telephone_book:
+    print('Bob is in the telephone book!', telephone_book['Bob'])
+else:
+    print('Bob is not in the telephone book :(', telephone_book['Bob'])
+```
+
+A dictionary can also be empty at first, with key/values added later on:
+
+```python
+empty_dictionary = {}
+```
+
+# dicts exercise 1
+
+Write a digit converter, that translates a sequence of digits into words, for example: 02585 -> "zero two five eight five"
+
+# dicts exercise 2
+
+Write a smiley converter, that converts :) and :(, :D in a text into emoticons: 😞 😃 😛 
+
+# opening and reading files
+
+```python
+with open('names.txt') as names:
+    for line in names:
+        print(line)
+```
+
+# dicts exercise 3
+
+Load the names dataset from http://shapecatcher.com/names.zip
+
+We want to analyzse the distribution of characters at the end of English female and male names.
