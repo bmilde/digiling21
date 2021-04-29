@@ -569,7 +569,9 @@ empty_dictionary = {}
 
 Write a digit converter, that translates a sequence of digits into words, for example: 02585 -> "zero two five eight five"
 
-# functions
+# April 30
+
+## functions
 
 ```python
 def unique(input_list):
@@ -625,7 +627,7 @@ functioname(argument1, argument2)
 
 Write a smiley converter, that converts :) and :(, :D in a text into emoticons: 😞 😃 😛 
 
-This is similar to dicts exercise 1. However, this time write a new function that takes a string as input and produces the new string with the replacements as output.
+This is similar to dicts exercise 1. However, this time write a new function that takes a string as input and produces the new string with the replacements as output. Then call your function to test it and print some example results.
 
 # Working with files
 
@@ -646,7 +648,7 @@ with open('names.txt', 'r') as names:
         print(line)
 ```
 
-Text files can also be written to
+Text files can also be written to:
 
 ```python
 with open('numbers.txt', 'w') as numbers_out:
