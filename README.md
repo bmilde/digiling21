@@ -569,9 +569,57 @@ empty_dictionary = {}
 
 Write a digit converter, that translates a sequence of digits into words, for example: 02585 -> "zero two five eight five"
 
-
 # functions
 
+```python
+def unique(input_list):
+    new_list = []
+    for item in input_list:
+        if item not in new_list:
+            new_list.append(item)
+    return new_list
+    
+print(unique([5,5,5,42,5,3,42]))
+```
+
+```python
+def add(num1, num2):
+    return num1+num2
+    
+print(add(4,6))
+```
+
+The def statement can be used to declare your own functions. This encapsulates functionality, that you can later reuse.
+
+Syntax is:
+
+```python
+def functioname():
+```
+
+or 
+
+```python
+def functioname(argument1):
+```
+
+or
+
+```python
+def functioname(argument1, argument2):
+```
+
+Any code inside the function is indented one level. The return keyword is used to end the function call and return one or more objects. 
+
+```python
+    return elem
+```
+
+After your function is declared, you can use your function by calling it with the name you have given it, followed by () and potential arguments:
+
+```python
+functioname(argument1, argument2)
+```
 
 # dicts + functions exercise 2
 
@@ -611,7 +659,6 @@ with open('names.txt') as names, open('names_upper.txt','w') as names_out:
     for line in names:
         namesout.write(line.upper())
 ```
-
 
 # dicts exercise 3
 
