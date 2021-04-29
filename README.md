@@ -569,7 +569,7 @@ empty_dictionary = {}
 
 Write a digit converter, that translates a sequence of digits into words, for example: 02585 -> "zero two five eight five"
 
-# April 30
+# 30. April
 
 ## functions
 
