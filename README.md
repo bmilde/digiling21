@@ -565,21 +565,53 @@ A dictionary can also be empty at first, with key/values added later on:
 empty_dictionary = {}
 ```
 
-# dicts exercise 1
+## dicts exercise 1
 
 Write a digit converter, that translates a sequence of digits into words, for example: 02585 -> "zero two five eight five"
 
-# dicts exercise 2
+
+# functions
+
+
+# dicts + functions exercise 2
 
 Write a smiley converter, that converts :) and :(, :D in a text into emoticons: 😞 😃 😛 
 
-# opening and reading files
+This is similar to dicts exercise 1. However, this time write a new function that takes a string as input and produces the new string with the replacements as output.
+
+# Working with files
+
+In python, we use the following syntax to open a text file and read it line by line:
 
 ```python
 with open('names.txt') as names:
     for line in names:
         print(line)
 ```
+
+The open() function is builtin, similar to print input etc. The second argument to open is by default 'r' for read, so the above is identical to:
+
+
+```python
+with open('names.txt', 'r') as names:
+    for line in names:
+        print(line)
+```
+
+Text files can also be written to
+
+```python
+with open('numbers.txt', 'w') as numbers_out:
+    for number in range(10):
+        numbers_out.write(str(number) + '\n') # The '\n' character makes a new line. While print automatically appends a new line, .write() does not do this.
+```
+
+```python
+with open('names.txt') as names, open('names_upper.txt','w') as names_out:
+    for line in names:
+        namesout.write(line.upper())
+```
+
 
 # dicts exercise 3
 
