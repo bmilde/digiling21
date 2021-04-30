@@ -671,7 +671,7 @@ We want to analyzse the distribution of characters at the end of English female 
 You can start from this template, that reads the two files female.txt and male.txt line by line (and just prints the content):
 
 ```python
-def anaylse(names_file):
+def analyse(names_file):
     with open(names_file) as names_female:
         for line in names_female:
             if line[-1] == '\n':
