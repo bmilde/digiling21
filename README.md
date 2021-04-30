@@ -679,6 +679,6 @@ def analyse(names_file):
             name = line
             print(name)
 
-anaylse("names/female.txt")
-anaylse("names/male.txt")
+analyse("names/female.txt")
+analyse("names/male.txt")
 ```
