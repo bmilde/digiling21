@@ -667,3 +667,18 @@ with open('names.txt') as names, open('names_upper.txt','w') as names_out:
 Load the names dataset from http://shapecatcher.com/names.zip
 
 We want to analyzse the distribution of characters at the end of English female and male names.
+
+You can start from this template, that reads the two files female.txt and male.txt line by line (and just prints the content):
+
+```python
+def anaylse(names_file):
+    with open(names_file) as names_female:
+        for line in names_female:
+            if line[-1] == '\n':
+                line = line[:-1]
+            name = line
+            print(name)
+
+anaylse("names/female.txt")
+anaylse("names/male.txt")
+```
