@@ -682,3 +682,42 @@ def analyse(names_file):
 analyse("names/female.txt")
 analyse("names/male.txt")
 ```
+
+# May 6
+
+# Default dicts
+
+Default dicts are like regular dictionaries, but every key that is not available is automatically generated and initialized (to zero for int):
+
+```
+from collections import defaultdict
+
+dd = defaultdict(int)
+
+print(dd["test"])
+
+```
+
+# Shakespeare corpus
+
+Load the shakespeare dataset from http://shapecatcher.com/shakespeare.zip
+
+We will work with Spacy, a module for various NLP tasks:
+
+```
+import spacy
+  
+spacy.cli.download("en_core_web_sm")
+
+nlp = spacy.load("en_core_web_sm")
+
+with open("shakespeare.txt") as input_file:
+  text = input_file.read()
+
+shakespeare_corpus = nlp(text)
+
+for token in shakespeare_corpus:
+    print(token)
+```
+
+Excercise: What are the most frequent words in Shakespears complete works?
