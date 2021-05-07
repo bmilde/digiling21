@@ -692,7 +692,7 @@ def get_second_element(item):
     return item[1]
 
 def analyse(names_file):
-    corp = defaultdict(int)
+    corp = {}
     with open(names_file) as names:
         for line in names:
             line = line.strip() # -> strips \n
