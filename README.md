@@ -685,17 +685,71 @@ analyse("names/male.txt")
 
 # May 6
 
+# Names solution 1
+
+```python
+def get_second_element(item):
+    return item[1]
+
+def analyse(names_file):
+    corp = defaultdict(int)
+    with open(names_file) as names:
+        for line in names:
+            line = line.strip() # -> strips \n
+            last_character = line[-1]
+            
+            if last_character not in corp:
+                corp[last_character] = 1
+            else:
+                corp[last_character] += 1
+
+    corp_sorted = dict(sorted(corp.items(),
+                              reverse=True,
+                              key=get_second_element))
+
+    print(corp_sorted)
+```
+
 # Default dicts
 
 Default dicts are like regular dictionaries, but every key that is not available is automatically generated and initialized (to zero for int):
 
-```
+```python
 from collections import defaultdict
 
 dd = defaultdict(int)
 
 print(dd["test"])
 
+```
+
+# Names solution 2
+
+```python
+from collections import defaultdict
+
+def get_second_element(item):
+    return item[1]
+
+def analyse(names_file):
+    corp = defaultdict(int)
+    with open(names_file) as names:
+        for line in names:
+            line = line.strip() # -> strips \n
+            last_character = line[-1]
+            corp[last_character] += 1
+
+    corp_sorted = dict(sorted(corp.items(),
+                              reverse=True,
+                              key=get_second_element))
+
+    print(corp_sorted)
+
+print('female names:')
+analyse("names/female.txt")
+
+print('male names:')
+analyse("names/male.txt")
 ```
 
 # Shakespeare corpus
