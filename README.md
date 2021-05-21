@@ -775,9 +775,10 @@ for token in shakespeare_corpus:
 ```
 
 Excercise: What are the most frequent words in Shakespears complete works?
+
+# May 21
               
-              
-# Plotting with matplotlib/pyplot
+## Plotting with matplotlib/pyplot
               
 Install matplotlib first, you should be able to write:
               
