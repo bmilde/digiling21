@@ -823,4 +823,29 @@ plt.hist(x, 100)
 
 plt.show()
 ```
+
+Example plotting frequency/rank of words in a vocabulary dictionary:            
               
+```
+# this would usually be generated from real data, needs to be sorted!              
+vocabulary = {'the':523, 'cat':235, 'dog':132}
+
+# generate a list with 1,2,3 for the ranks in the x axis              
+x_data = list(range(1,4))
+              
+# retrieve the frequency of words from the dictionary              
+y_data = [vocabulary[word] for word in vocabulary]
+
+# check that data looks correct:              
+print(x_data)
+print(y_data)
+
+# plot it as a green line (g) with oval data markers (o) and a line connecting the data points (-)
+plt.plot(x_data, y_data, 'go-')
+              
+# manually set limits on the axis:
+plt.xlim(1,10)              
+
+# show the plot the user              
+plt.show()
+```              
