@@ -758,7 +758,7 @@ Load the shakespeare dataset from http://shapecatcher.com/shakespeare.zip
 
 We will work with Spacy, a module for various NLP tasks:
 
-```
+```python
 import spacy
   
 spacy.cli.download("en_core_web_sm")
@@ -781,7 +781,7 @@ Excercise: What are the most frequent words in Shakespears complete works?
               
 Install matplotlib first, you should be able to write:
               
-```
+```python
 import   matplotlib           
 ```     
               
@@ -789,7 +789,7 @@ In PyCharm and it should automatically suggest to install matplotlib. In this co
               
 Examples to create line plots:
               
-```
+```python
 import matplotlib.pyplot as plt
 
 x_data = [4., 7., 9., 15.7]
@@ -810,7 +810,7 @@ plt.legend(["Experiment 1","Experiment 2"], loc="lower right")
 
 Histogram plot example using 1000 artifically generated datapoints, normally distributed:
 
-```
+```python
 import numpy as np             
 import matplotlib.pyplot as plt         
 
@@ -829,7 +829,7 @@ plt.show()
 
 Example plotting frequency/rank of words in a vocabulary dictionary:            
               
-```
+```python
 # this would usually be generated from real data, needs to be sorted!              
 vocabulary = {'the':523, 'cat':235, 'dog':132}
 
