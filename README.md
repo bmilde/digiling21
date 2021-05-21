@@ -813,12 +813,15 @@ Histogram plot example using 1000 artifically generated datapoints, normally dis
 ```
 import numpy as np             
 import matplotlib.pyplot as plt         
-              
+
+# generate a random list with normally distributed datapoints, mean of 100 and sigma of 15              
 mu = 100.
 sigma = 15.
-print(np.random.rand(10))
 x = mu + sigma * np.random.randn(1000)
-print(x)
+              
+print(x) # random numbers centered around 100
+              
+# plot a histogram with 100 bars              
 plt.hist(x, 100)
 
 plt.show()
