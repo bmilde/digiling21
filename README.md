@@ -790,9 +790,7 @@ In PyCharm and it should automatically suggest to install matplotlib. In this co
 Examples to create line plots:
               
 ```
-import matplotlib
 import matplotlib.pyplot as plt
-import numpy as np
 
 x_data = [4., 7., 9., 15.7]
 y_data = [x*x for x in x_data]
