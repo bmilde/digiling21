@@ -807,3 +807,20 @@ plt.ylabel("seconds")
 
 plt.legend(["Experiment 1","Experiment 2"], loc="lower right")           
 ```              
+
+Histogram plot example using 1000 artifically generated datapoints, normally distributed:
+
+```
+import numpy as np             
+import matplotlib.pyplot as plt         
+              
+mu = 100.
+sigma = 15.
+print(np.random.rand(10))
+x = mu + sigma * np.random.randn(1000)
+print(x)
+plt.hist(x, 100)
+
+plt.show()
+```
+              
