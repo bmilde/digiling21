@@ -24,7 +24,7 @@ store simple values in memory:
 count = 7
 rating = 4.9
 name = 'Benjamin'
-is_published = True or
+is_published = True #or
 is_published = False 
 ```
 
