@@ -853,3 +853,22 @@ plt.xlim(1,10)
 # show the plot the user              
 plt.show()
 ```              
+
+# 27 May              
+
+We will start with a new corpus, a dataset of movie reviews from IMDB. Download it here https://shapecatcher.com/IMDBdata.zip 
+              
+This dataset contains reviews + sentiment (positive / negative). We want to find out which words (adjectives) are frequently used in positive reviews and which ones are used in negative reviews. We would also like to see if there are different patterns in how long (number of words) a negative or positive reviews is and would like to plot the lengths in a histogram plot to learn more about this.
+              
+This new dataset is in csv format. Csv stand for comma separated values and is a common format for tabular data. There is also a nice Python module to read csv files:
+              
+```python
+import csv
+
+with open('IMDB Dataset.csv', newline='') as csvfile:
+    reader = csv.reader(csvfile)
+    for row in reader:
+        print('text:',row[0])
+        print('sentiment:',row[1])    
+```              
+              
