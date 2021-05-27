@@ -871,4 +871,21 @@ with open('IMDB Dataset.csv', newline='') as csvfile:
         print('text:',row[0])
         print('sentiment:',row[1])    
 ```              
+  
+This, we try to structure our code into functions:
+       
+```python              
+import csv
+
+def process_csv():
+    with open('IMDB Dataset.csv', newline='') as csvfile:
+        reader = csv.reader(csvfile)
+        for row in reader:
+            print('text:',row[0])
+            print('sentiment:',row[1])
+
+if __name__ == "__main__":
+    process_csv()
+```
               
+Typically a larger Python program has multiple functions, potentially distributed accross many files. The main file will have a statement (if __name__ == "__main__") at the end, this is the main entry point of the program.              
