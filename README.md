@@ -895,8 +895,10 @@ import csv
 
 def analyze_adjectives(dataset):
     #YOUR CODE HERE
+    return
 def plot_length_distribution(dataset):
     #YOUR CODE HERE
+    return
 
 def read_dataset():
     dataset = []
