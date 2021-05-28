@@ -923,4 +923,11 @@ if __name__ == "__main__":
     plot_length_distribution(imdb_review)
 ```              
               
-Typically a larger Python program has multiple functions, potentially distributed accross many files. The main file will have a statement (if __name__ == "__main__") at the end, this is the main entry point of the program.              
+Typically a larger Python program has multiple functions, potentially distributed accross many files. The main file will have a statement: 
+
+```python                
+if __name__ == "__main__":
+    #main entry point
+```
+              
+at the end, this is the main entry point of the program.              
