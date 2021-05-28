@@ -901,7 +901,7 @@ def plot_length_distribution(dataset):
 def read_dataset():
     dataset = []
 
-    with open('IMDB Dataset.csv','r', newline='') as csvfile:
+    with open('IMDB Dataset.csv', 'r', newline='', encoding='utf-8') as csvfile:
 
         reader = csv.reader(csvfile)
 
