@@ -887,5 +887,38 @@ def process_csv():
 if __name__ == "__main__":
     process_csv()
 ```
+
+ For the excercise:             
+              
+```python                
+import csv
+
+def analyze_adjectives(dataset):
+    #YOUR CODE HERE
+def plot_length_distribution(dataset):
+    #YOUR CODE HERE
+
+def read_dataset():
+    dataset = []
+
+    with open('IMDB Dataset.csv','r', newline='') as csvfile:
+
+        reader = csv.reader(csvfile)
+
+        for row in reader:
+            review = row[0]
+            sentiment = row[1]
+            dataset.append((review, sentiment))
+
+    return dataset
+
+if __name__ == "__main__":
+    print('Read dataset')
+    imdb_review = read_dataset()
+    print('Done')
+
+    analyze_adjectives(imdb_review)
+    plot_length_distribution(imdb_review)
+```              
               
 Typically a larger Python program has multiple functions, potentially distributed accross many files. The main file will have a statement (if __name__ == "__main__") at the end, this is the main entry point of the program.              
