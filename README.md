@@ -930,4 +930,12 @@ if __name__ == "__main__":
     #main entry point
 ```
               
-at the end, this is the main entry point of the program.              
+at the end, this is the main entry point of the program.  
+              
+# Literature
+              
+Kokensparger, Brian. Guide to Programming for the Digital Humanities: Lessons for Introductory Python. Cham: Springer International Publishing, 2018.              
+              
+https://doi.org/10.1007/978-3-319-99115-3              
+              
+http://emedien.sub.uni-hamburg.de/han/SpringerEbooks/doi.org/10.1007/978-3-319-99115-3
