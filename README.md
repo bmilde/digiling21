@@ -659,7 +659,7 @@ with open('numbers.txt', 'w') as numbers_out:
 ```python
 with open('names.txt') as names, open('names_upper.txt','w') as names_out:
     for line in names:
-        namesout.write(line.upper())
+        names_out.write(line.upper())
 ```
 
 # dicts exercise 3
