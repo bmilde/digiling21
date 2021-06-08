@@ -939,3 +939,10 @@ Kokensparger, Brian. Guide to Programming for the Digital Humanities: Lessons fo
 https://doi.org/10.1007/978-3-319-99115-3              
               
 http://emedien.sub.uni-hamburg.de/han/SpringerEbooks/doi.org/10.1007/978-3-319-99115-3
+              
+Hammond, Michael. Python for Linguists. Cambridge University Press.
+              
+https://doi.org/10.1017/9781108642408              
+              
+http://emedien.sub.uni-hamburg.de/han/CambridgeBooksOnline/doi.org/10.1017/9781108642408
+
